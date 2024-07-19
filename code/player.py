@@ -100,7 +100,6 @@ class Player(pygame.sprite.Sprite):
                 self.timers["seed_use"].activate()
                 self.direction = pygame.math.Vector2()
                 self.frame_index = 0
-                print("use seed")
 
             # change seed
             if keys[pygame.K_x] and not self.timers["seed_switch"].active:
@@ -114,7 +113,7 @@ class Player(pygame.sprite.Sprite):
         pass
 
     def use_seed(self):
-        debug(self.selected_seed)
+        pass
 
     def get_status(self):
 

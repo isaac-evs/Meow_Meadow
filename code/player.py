@@ -22,7 +22,7 @@ class Player(pygame.sprite.Sprite):
         # movement attributes
         self.direction = pygame.math.Vector2()
         self.pos = pygame.math.Vector2(self.rect.center)
-        self.speed = 30
+        self.speed = 25
 
         # timers
         self.timers = {

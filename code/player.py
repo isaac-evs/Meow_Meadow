@@ -17,6 +17,7 @@ class Player(pygame.sprite.Sprite):
         # general setup
         self.image = self.animations[self.status][self.frame_index]
         self.rect = self.image.get_rect(center = pos)
+        self.hitbox = self.rect.copy().inflate((-126, -70))
         self.z = LAYERS["main"]
 
         # movement attributes
